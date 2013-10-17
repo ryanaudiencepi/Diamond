@@ -22,7 +22,7 @@
 # Author: Sam Bashton <sam@bashton.com>
 NAME=diamond
 DAEMON=/usr/bin/diamond
-DAEMON_ARGS="-p /var/run/diamond.pid"
+DAEMON_ARGS="--skip-change-user -p /var/run/diamond.pid"
 PIDFILE=/var/run/diamond.pid
 SCRIPTNAME=/etc/init.d/diamond
 LOCKDIR=/var/lock/subsys
